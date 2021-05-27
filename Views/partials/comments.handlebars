@@ -1,1 +1,12 @@
-\
+<div class="comments">
+{{#each this}}
+<section class="comment box m-2 is-primary">
+<h3 class="subtitle meta p-2 has-text-primary">
+    {{user.username}} on {{format_date created_at}}
+</h3>
+<div class="text px-2">
+    {{comment_text}}
+</div>
+</section>
+{{/each}}
+</div>
